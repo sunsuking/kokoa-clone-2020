@@ -19,7 +19,7 @@
 
 .friends-screen__channel {
 	margin-top: 25px;
-	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-top: var(--main-border);
 	padding-top: 15px;
 }
 
@@ -28,5 +28,5 @@
 	/* * Channel 과 ^ 를 서로 띄우기 위해서 display:flex; 와 justify-content: space-between; 설정. */
 	display: flex;
 	justify-content: space-between;
-	color: rgba(0, 0, 0, 0.5);
+	color: var(--main-grey);
 }
