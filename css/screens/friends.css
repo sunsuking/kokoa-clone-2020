@@ -1,0 +1,31 @@
+#friends-display-link {
+	/* * text-align 을 적용시켜주기 위하여 display: block 속성을 추가해줌. */
+	display: block;
+	text-align: center;
+	background-color: #fafafa;
+	padding: 15px 0px;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+#friends-display-link i {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+	padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+	margin-top: 25px;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+	margin-bottom: 30px;
+	/* * Channel 과 ^ 를 서로 띄우기 위해서 display:flex; 와 justify-content: space-between; 설정. */
+	display: flex;
+	justify-content: space-between;
+	color: rgba(0, 0, 0, 0.5);
+}
