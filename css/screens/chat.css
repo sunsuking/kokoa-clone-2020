@@ -99,3 +99,65 @@
 .message-row--own .message__time {
 	order: 0; 
 } */
+
+.reply {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 25px;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.reply i {
+	opacity: 0.5;
+}
+
+.reply .reply__column:first-child {
+	width: 10%;
+}
+
+.reply .reply__column:last-child {
+	position: relative;
+	width: 90%;
+}
+
+.reply input {
+	padding: 5px 10px;
+	height: 30px;
+	width: 100%;
+	border: var(--main-border);
+	border-radius: 20px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child > button {
+	position: absolute;
+	top: 7px;
+	right: -3px;
+}
+
+.reply__column:last-child > i {
+	top: 15px;
+	right: 40px;
+}
+
+.reply__column:last-child button {
+	background-color: var(--yellow);
+	border: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.reply__column:last-child button i {
+	opacity: 1;
+}
+
+.reply__column:last-child button:focus,
+.reply__column:last-child button:active {
+	outline: none;
+}
