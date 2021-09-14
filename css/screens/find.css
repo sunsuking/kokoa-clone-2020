@@ -107,3 +107,24 @@
 .open-post__heart-count span {
 	margin-left: 3px;
 }
+
+/* * transform 속성: 크기를 키워주는 속성 */
+@keyframes heartBeat {
+	0% {
+		color: white;
+		transform: none;
+	}
+	50% {
+		color: tomato;
+		transform: scale(1.5);
+	}
+	10% {
+		color: white;
+	}
+}
+
+.open-post__heart-count:hover i {
+	/* * element에게 변화가 있을 것이라 이야기하는 것: 그래픽카드를 이용하여 애니메이션 가속화 */
+	will-change: transform;
+	animation: heartBeat 1s linear infinite;
+}
